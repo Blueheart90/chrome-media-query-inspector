@@ -23,13 +23,15 @@
     "permissions": [
       "http://localhost/*",
       "http://127.0.0.1:8000/*",
-      "https://*/*",
+      "https://*/*"
       "storage"
     ],
     "content_security_policy": "default-src 'self'; style-src 'unsafe-inline';",
     "content_scripts": [
       {
         "matches": [
+		  "http://localhost/*",
+		  "http://127.0.0.1:8000/*",
           "https://*/*"
         ],
         "js": [
